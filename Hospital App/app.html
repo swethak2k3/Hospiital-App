@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Appointment System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Login Section -->
+    <div id="login-section">
+        <h2>Patient Login</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button id="login-btn">Login</button>
+        <p id="login-msg"></p>
+    </div>
+
+    <!-- Appointment Section -->
+    <div id="appointment-section" style="display:none;">
+        <div id="history"></div>
+        <h2>Dr. Appointment</h2>
+
+        <label>Doctor:</label>
+        <select id="doctor">
+            <option>Dr. Swetha</option>
+            <option>Dr. Ashwin</option>
+            <option>Dr. Harish</option>
+        </select>
+
+        <label>Date:</label>
+        <input type="date" id="date">
+
+        <label>Time:</label>
+        <input type="time" id="time">
+
+        <button id="book-btn">Book Appointment</button>
+
+        <h3 id="status"></h3>
+
+        <button id="logout-btn">Logout</button>
+    </div>
+
+</div>
+
+<script src="sc.js"></script>
+</body>
+</html>
